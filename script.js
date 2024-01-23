@@ -11,9 +11,22 @@ links.forEach(function(link) {
     });
 });
 
-window.addEventListener('popstate', function(event) {
+window.addEventListener('load', function() {
     changeSection(location.hash);
 });
+
+function changeSection(sectionId) {
+    hideAllSections();
+    var section = document.querySelector(sectionId);
+    section.classList.remove('hidden');
+}
+
+function hideAllSections() {
+    var sections = document.querySelectorAll('main section');
+    sections.forEach(function(section) {
+        section.classList.add('hidden');
+    });
+}
 
 window.addEventListener('scroll', function() {
     const title = document.getElementById('title');
