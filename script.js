@@ -6,15 +6,14 @@ links.forEach(function(link) {
         hideAllSections();
         var section = document.querySelector(this.getAttribute('href'));
         section.classList.remove('hidden');
+
+        history.pushState(null, null, this.getAttribute('href'));
     });
 });
 
-function hideAllSections() {
-    var sections = document.querySelectorAll('main section');
-    sections.forEach(function(section) {
-        section.classList.add('hidden');
-    });
-}
+window.addEventListener('popstate', function(event) {
+    changeSection(location.hash);
+});
 
 window.addEventListener('scroll', function() {
     const title = document.getElementById('title');
@@ -38,5 +37,16 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Show the gallery section by default
+images.forEach(function(image) {
+    image.addEventListener('click', function() {
+        modal.classList.remove('hidden');
+        modalImage.src = this.src;
+        modalDescription.textContent = this.alt;
+    });
+});
+
+modal.addEventListener('click', function() {
+    modal.classList.add('hidden');
+});
+
 document.querySelector('#home').classList.remove('hidden');
