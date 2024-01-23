@@ -7,19 +7,32 @@ links.forEach(function(link) {
         var section = document.querySelector(this.getAttribute('href'));
         section.classList.remove('hidden');
 
-        history.pushState(null, null, this.getAttribute('href'));
+        // Don't add a history entry if the clicked link is the home link
+        if (this.getAttribute('href') !== '#home') {
+            history.pushState(null, null, this.getAttribute('href'));
+        } else {
+            history.replaceState(null, null, window.location.pathname);
+        }
     });
 });
+
+function changeSection(sectionId) {
+    hideAllSections();
+    if (sectionId && sectionId !== '#home' && sectionId !== '') {
+        var section = document.querySelector(sectionId);
+        section.classList.remove('hidden');
+    } else {
+        document.querySelector('#home').classList.remove('hidden');
+    }
+}
 
 window.addEventListener('load', function() {
     changeSection(location.hash);
 });
 
-function changeSection(sectionId) {
-    hideAllSections();
-    var section = document.querySelector(sectionId);
-    section.classList.remove('hidden');
-}
+window.addEventListener('popstate', function(event) {
+    changeSection(location.hash);
+});
 
 function hideAllSections() {
     var sections = document.querySelectorAll('main section');
@@ -27,6 +40,8 @@ function hideAllSections() {
         section.classList.add('hidden');
     });
 }
+
+// ... rest of your code
 
 window.addEventListener('scroll', function() {
     const title = document.getElementById('title');
