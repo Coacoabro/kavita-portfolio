@@ -3,22 +3,24 @@
 <head>
     <title>Kavita Bharat - Art Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Azonix&display=swap">
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body class="font-sans text-gray-900">
-    <nav class="p-5 bg-gray-300">
-        <ul class="flex justify-around">
+<body>
+    <nav class="p-5 custom-background">
+        <ul class="flex justify-between items-center">
             <li>
-                <a href="#home" class="text-2xl">KAVITA BHARAT</a>
+                <a href="#home" class="text-3xl">KAVITA BHARAT</a>
             </li>
-            <div class="flex justify-around space-x-4">
-                <li><a href="#twoD" class="text-gray-700">2D</a></li>
-                <li><a href="#threeD" class="text-gray-700">3D</a></li>
-                <li><a href="#about" class="text-gray-700">ABOUT</a></li>
-                <li><a href="#contact" class="text-gray-700">CONTACT</a></li>
+            <div class="flex space-x-4 text-xl">
+                <li><a href="#twoD"">2D</a></li>
+                <li><a href="#threeD"">3D</a></li>
+                <li><a href="#about"">ABOUT</a></li>
+                <li><a href="#contact"">CONTACT</a></li>
             </div>
         </ul>
     </nav>
-    <div class="flex flex-col min-h-screen">
+    <div class="flex flex-col min-h-screen bg-A0A0A0">
         <main class="p-5 flex-grow">
             <section id="home" class="hidden">
                 <img src="/public/1. Title.png" alt="Title">
@@ -47,9 +49,6 @@
                 Nunya
             </section>
         </main>
-        <footer class="p-5 bg-blue-500 text-center text-white">
-            2024 Kavita Bharat
-        </footer>
     </div>
     
     <script src="script.js"></script>

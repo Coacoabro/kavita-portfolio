@@ -1,0 +1,16 @@
+/* styles.css */
+.custom-background {
+    background-color: #A0A0A0; /* Your custom color code */
+    color: #FFFFFF; /* Text color */
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+@font-face {
+    font-family: 'Futurist Fixed-width';
+    src: url('FUTRFW.TTF') format('truetype');
+}
+
+body {
+    font-family: 'Futurist Fixed-width', monospace;
+}
+  
