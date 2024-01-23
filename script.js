@@ -57,9 +57,8 @@ window.addEventListener('scroll', function() {
         images.style.display = 'grid';
         arrow.style.display = 'none';
     } else {
-        images.style.transform = 'translateY(0)';
         images.style.display = 'none';
-        arrow.style.display = 'block';
+        arrow.style.display = 'flex';
     }
 });
 
