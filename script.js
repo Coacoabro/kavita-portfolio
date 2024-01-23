@@ -17,4 +17,4 @@ function hideAllSections() {
 }
 
 // Show the gallery section by default
-document.querySelector('#gallery').classList.remove('hidden');
+document.querySelector('#home').classList.remove('hidden');

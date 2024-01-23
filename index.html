@@ -4,23 +4,40 @@
     <title>Kavita Bharat - Art Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="font-sans bg-gray-100 text-gray-900">
-    <nav class="p-5 bg-blue-200">
+<body class="font-sans text-gray-900">
+    <nav class="p-5 bg-gray-300">
         <ul class="flex justify-around">
-            <div class="text-2xl">Kavita Bharat Art Portfolio</div>
+            <li>
+                <a href="#home" class="text-2xl">KAVITA BHARAT</a>
+            </li>
             <div class="flex justify-around space-x-4">
-                <li><a href="#gallery" class="text-blue-700 hover:underline">Gallery</a></li>
-                <li><a href="#about" class="text-blue-700 hover:underline">About</a></li>
-                <li><a href="#contact" class="text-blue-700 hover:underline">Contact</a></li>
+                <li><a href="#twoD" class="text-gray-700">2D</a></li>
+                <li><a href="#threeD" class="text-gray-700">3D</a></li>
+                <li><a href="#about" class="text-gray-700">ABOUT</a></li>
+                <li><a href="#contact" class="text-gray-700">CONTACT</a></li>
             </div>
         </ul>
     </nav>
     <div class="flex flex-col min-h-screen">
         <main class="p-5 flex-grow">
-            <section id="gallery" class="hidden">
-                <div class="grid grid-cols-3 gap-4">
+            <section id="home" class="hidden">
+                <img src="/public/1. Title.png" alt="Title">
+            </section>
+            <section id="twoD" class="hidden">
+                <div class="grid grid-cols-3 gap-6">
                     <img src="/public/2. Golden Ring.png" alt="Golden Ring">
                     <img src="/public/3. Asaro Head.png" alt="Asaro Head">
+                    <img src="/public/5. Keeper.png" alt="Keeper">
+                    <img src="/public/4. Environment.png" alt="Environment">
+                    <img src="/public/7. Gina.png" alt="Gina">
+                    <img src="/public/5. Profile.png" alt="Profile">
+                </div>
+            </section>
+            <section id="threeD" class="hidden">
+                <div class="grid grid-cols-3 gap-4">
+                    <img src="/public/12. 3D Barrels.png" alt="Barrels">
+                    <img src="/public/13. Lyre.png" alt="Lyre">
+                    <img src="/public/15. 3D Tavern Environment.png" alt="Tavern">
                 </div>
             </section>
             <section id="about" class="hidden">
