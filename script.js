@@ -11,14 +11,14 @@ links.forEach(function(link) {
         if (this.getAttribute('href') !== '#home') {
             history.pushState(null, null, this.getAttribute('href'));
         } else {
-            history.replaceState(null, null, window.location.pathname);
+            history.replaceState(null, null, ' ');
         }
     });
 });
 
 function changeSection(sectionId) {
     hideAllSections();
-    if (sectionId && sectionId !== '#home' && sectionId !== '') {
+    if (sectionId && sectionId !== '#home' && sectionId !== '#') {
         var section = document.querySelector(sectionId);
         section.classList.remove('hidden');
     } else {
@@ -27,7 +27,7 @@ function changeSection(sectionId) {
 }
 
 window.addEventListener('load', function() {
-    changeSection(location.hash);
+    changeSection(location.hash || '#home');
 });
 
 window.addEventListener('popstate', function(event) {
@@ -40,8 +40,6 @@ function hideAllSections() {
         section.classList.add('hidden');
     });
 }
-
-// ... rest of your code
 
 window.addEventListener('scroll', function() {
     const title = document.getElementById('title');
