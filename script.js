@@ -1,5 +1,7 @@
 var links = document.querySelectorAll('nav a');
 
+document.querySelector('#home').classList.remove('hidden');
+
 links.forEach(function(link) {
     link.addEventListener('click', function(event) {
         event.preventDefault();
@@ -73,8 +75,6 @@ images.forEach(function(image) {
 modal.addEventListener('click', function() {
     modal.classList.add('hidden');
 });
-
-document.querySelector('#home').classList.remove('hidden');
 
 
 
