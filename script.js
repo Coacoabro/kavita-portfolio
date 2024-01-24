@@ -75,3 +75,30 @@ modal.addEventListener('click', function() {
 });
 
 document.querySelector('#home').classList.remove('hidden');
+
+// Get the email button
+const emailButton = document.querySelector('#email');
+
+// Add click event listener
+emailButton.addEventListener('click', () => {
+    // Create a new textarea element
+    const textarea = document.createElement('textarea');
+
+    // Set the textarea value to the email
+    textarea.value = emailButton.textContent;
+
+    // Add the textarea to the body (it won't be visible)
+    document.body.appendChild(textarea);
+
+    // Select the textarea content
+    textarea.select();
+
+    // Copy the textarea content to the clipboard
+    document.execCommand('copy');
+
+    // Remove the textarea from the body
+    document.body.removeChild(textarea);
+
+    // Optionally, show a message to the user
+    alert('Email copied to clipboard!');
+});
