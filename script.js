@@ -79,14 +79,32 @@ modal.addEventListener('click', function() {
 
 
 function emailButton() {
-    // Get the text field
     var copyText = "kavitadigital.art@gmail.com";
 
-    navigator.clipboard.writeText(copyText)
-        .then(() => {
-            alert("Copied to Clipboard");
-        })
-        .catch(err => {
-            console.error("Could not copy text: ", err);
-        });
-  }
+    // Create a new textarea element
+    var textarea = document.createElement('textarea');
+
+    // Set the textarea value to the email
+    textarea.value = copyText;
+
+    // Add the textarea to the body (it won't be visible)
+    document.body.appendChild(textarea);
+
+    // Select the textarea content
+    textarea.select();
+
+    // Copy the textarea content to the clipboard
+    try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        if(successful) {
+            alert("Email copied to clipboard!");
+        }
+        console.log('Copying text command was ' + msg);
+    } catch (err) {
+        console.error('Could not copy text: ', err);
+    }
+
+    // Remove the textarea from the body
+    document.body.removeChild(textarea);
+}
