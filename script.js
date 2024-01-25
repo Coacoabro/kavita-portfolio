@@ -82,8 +82,11 @@ function emailButton() {
     // Get the text field
     var copyText = "kavitadigital.art@gmail.com";
 
-    navigator.clipboard.writeText(copyText);
-  
-    // Alert the copied text
-    alert("Copied to Clipboard");
+    navigator.clipboard.writeText(copyText)
+        .then(() => {
+            alert("Copied to Clipboard");
+        })
+        .catch(err => {
+            console.error("Could not copy text: ", err);
+        });
   }
