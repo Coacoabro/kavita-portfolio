@@ -18,6 +18,24 @@ links.forEach(function(link) {
     });
 });
 
+window.onload = function() {
+    var parent = document.getElementById('images');
+    var images = Array.prototype.slice.call(parent.getElementsByTagName('img'));
+
+    // Shuffle array
+    images.sort(function() { return 0.5 - Math.random() });
+
+    // Remove all images
+    while (parent.firstChild) {
+        parent.firstChild.remove();
+    }
+
+    // Append images in random order
+    for (var i = 0; i < images.length; i++) {
+        parent.appendChild(images[i]);
+    }
+};
+
 function changeSection(sectionId) {
     hideAllSections();
     if (sectionId && sectionId !== '#home' && sectionId !== '#') {
