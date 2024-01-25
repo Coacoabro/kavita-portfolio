@@ -67,3 +67,7 @@ body {
     background-color: #A0A0A0;
     color: #FFFFFF;
 }
+
+li {
+    list-style-type: none;
+}
