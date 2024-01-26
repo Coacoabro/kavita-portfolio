@@ -57,8 +57,7 @@
                     <a href="#art2D/Environment"><img src="/public/4. Environment.png" alt="Environment"></a>
                     <li><a href="#art2D-Gina"><img src="/public/7. Gina.png" alt="Gina"></a></li>
                     <a href="#art2D/Profile"><img src="/public/5. Profile.png" alt="Profile"></a>
-                    <a href="#art2D/Lumophone"><img src="/public/8. Lumophone.png" alt="Lumophone"></a>
-                    <a href="#art2D/Concept"><img src="/public/9. Concept Lumo.png" alt="Concept Lumo"></a>
+                    <a href="#art2D-Lumophone"><img src="/public/8. Lumophone.png" alt="Lumophone"></a>
                     <a href="#art2D/Whip"><img src="/public/10. Elemental Whip.png" alt="Elemental Whip"></a>
                 </div>
             </section>
@@ -83,18 +82,24 @@
             </section>
 
             <section id="art3D-Tavern" class="hidden max-w-screen-xl mx-auto">
-                <div>
-                    <div class="border rounded-lg p-8 shadow"><img id="mainImage" src="public/15. 3D Tavern Environment.png" alt="3D Tavern"></div>
+                <div class="space-y-2">
+                    <div class="border rounded-lg p-8 shadow"><img class="mainImage" src="public/15. 3D Tavern Environment.png" alt="3D Tavern"></div>
                     <div class="thumbnail-container p-4">
-                        <img src="public/15. 3D Tavern Environment.png" alt="main" onclick="changeImage('public/15. 3D Tavern Environment.png')">
-                        <img src="public/HighresScreenshot00014.png" alt="thumbnail 1" onclick="changeImage('public/HighresScreenshot00014.png')">
-                        <img src="public/HighresScreenshot00019.png" alt="thumbnail 1" onclick="changeImage('public/HighresScreenshot00019.png')">
+                        <img src="public/15. 3D Tavern Environment.png" alt="tavern" onclick="changeImage('art3D-Tavern', 'public/15. 3D Tavern Environment.png')">
+                        <img src="public/HighresScreenshot00014.png" alt="tavern 1" onclick="changeImage('art3D-Tavern', 'public/HighresScreenshot00014.png')">
+                        <img src="public/HighresScreenshot00019.png" alt="tavern 2" onclick="changeImage('art3D-Tavern', 'public/HighresScreenshot00019.png')">
                     </div>
                 </div>
             </section>
 
-            <section id="art2D-Gina" class="hidden">
-                <div>Test</div>
+            <section id="art2D-Lumophone" class="hidden max-w-screen-xl mx-auto">
+                <div class="space-y-2">
+                    <div class="border rounded-lg p-8 shadow"><img class="mainImage" src="public/8. Lumophone.png" alt="3D Tavern"></div>
+                    <div class="thumbnail-container p-4">
+                        <img src="public/8. Lumophone.png" alt="lumo" onclick="changeImage('art2D-Lumophone', 'public/8. Lumophone.png')">
+                        <img src="public/9. Concept Lumo.png" alt="lumo 1" onclick="changeImage('art2D-Lumophone', 'public/9. Concept Lumo.png')">
+                    </div>
+                </div>
             </section>
 
         </main>
