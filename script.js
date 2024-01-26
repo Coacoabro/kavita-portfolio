@@ -82,11 +82,19 @@ window.addEventListener('scroll', function() {
     }
 });
 
+var images = document.querySelectorAll('#art2D-Lumophone img, #art2D-Golden img, #art3D-Tavern img, #art3D-Lyre img, #art2D-Environment img, #art3D-Barrels img');
+var modal = document.getElementById('modal');
+var modalImage = document.getElementById('modal-image');
+var modalDescription = document.getElementById('modal-description');
+
 images.forEach(function(image) {
     image.addEventListener('click', function() {
-        modal.classList.remove('hidden');
-        modalImage.src = this.src;
-        modalDescription.textContent = this.alt;
+        if(this.classList.contains('mainImage')) {
+            this.parentNode.appendChild(modal);
+            modal.classList.remove('hidden');
+            modalImage.src = this.src;
+            modalDescription.textContent = this.alt;
+        }
     });
 });
 
