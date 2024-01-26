@@ -71,3 +71,21 @@ body {
 li {
     list-style-type: none;
 }
+
+#mainImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail-container img {
+    height: 120px;
+    width: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}

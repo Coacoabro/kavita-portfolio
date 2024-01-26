@@ -126,3 +126,8 @@ function emailButton() {
     // Remove the textarea from the body
     document.body.removeChild(textarea);
 }
+
+function changeImage(newImagePath) {
+    var mainImage = document.getElementById('mainImage');
+    mainImage.src = newImagePath;
+}
