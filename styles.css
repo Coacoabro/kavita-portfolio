@@ -27,6 +27,16 @@ body {
     color: #A0A0A0; /* Text color */
 }
 
+.back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+}
+
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }
