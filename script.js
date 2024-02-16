@@ -146,3 +146,10 @@ function changeImage(sectionId, newImagePath) {
         }
     }
 }
+
+var images = document.querySelectorAll('.image-container img');
+
+images.forEach(function(image) {
+    var text = image.nextElementSibling;
+    text.textContent = image.alt;
+});

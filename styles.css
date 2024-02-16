@@ -86,6 +86,7 @@ li {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    margin-right: auto;
 }
 
 .thumbnail-container {
@@ -98,4 +99,41 @@ li {
     width: auto;
     margin-right: 10px;
     cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.image-title {
+    color: #A0A0A0
+}
+
+.image-container {
+    position: relative;
+}
+
+.hover-image {
+    width: 100%;
+    height: auto;
+}
+
+.image-text {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.875rem;
+}
+
+.image-container:hover .image-text {
+    opacity: 1;
 }

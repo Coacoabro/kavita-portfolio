@@ -26,12 +26,12 @@
     <div class="flex flex-col min-h-screen">
         <main class="p-5 flex-grow">
             <section id="home" class="hidden px-32 py-28 space-y-96">
-                <div id="title" class="max-w-screen-2xl mx-auto space-y-32">
+                <div id="title" class="max-w-screen-2xl mx-auto space-y-48">
                     <img src="/public/1. Title.png" alt="Title">
-                    <!-- <div class="flex items-center">
-                        <li><a href="#art2D">2D WORKS</a></li>
-                        <li><a href="#art3D">3D WORKS</a></li>
-                    </div> -->
+                    <div class="flex items-center justify-center space-x-12">
+                        <li><div class="text-4xl custom-background p-6 rounded-md"><a href="#art2D">2D WORKS</a></div></li>
+                        <li><div class="text-4xl custom-background p-6 rounded-md"><a href="#art3D">3D WORKS</a></div></li>
+                    </div>
                     
                 </div>
                 <div id="arrow" class="arrow text-center items-center text-xl space-y-8">
@@ -55,22 +55,82 @@
             </section>
             <section id="art2D" class="hidden">
                 <div class="grid grid-cols-3 gap-6">
-                    <li><a href="#art2D-Golden"><img src="/public/2. Golden Ring.png" alt="Golden Ring"></a></li>
-                    <li><a href="#art2D-Asaro"><img src="/public/3. Asaro Head.png" alt="Asaro Head"></a></li>
-                    <li><a href="#art2D-Keeper"><img src="/public/5. Keeper.png" alt="Keeper"></a></li>
-                    <li><a href="#art2D-Environment"><img src="/public/4. Environment.png" alt="Environment"></a></li>
-                    <li><a href="#art2D-Gina"><img src="/public/7. Gina.png" alt="Gina"></a></li>
-                    <li><a href="#art2D-Profile"><img src="/public/5. Profile.png" alt="Profile"></a></li>
-                    <li><a href="#art2D-Lumophone"><img src="/public/8. Lumophone.png" alt="Lumophone"></a></li>
-                    <li><a href="#art2D-Whip"><img src="/public/10. Elemental Whip.png" alt="Elemental Whip"></a></li>
+                    <li class="image-container">
+                        <a href="#art2D-Gina">
+                            <img src="/public/Gina.png" alt="GINA" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
+                    <li class="image-container">
+                        <a href="#art2D-Asaro">
+                            <img src="/public/asaro.png" alt="CYBERNETIC" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
+                    <li class="image-container">
+                        <a href="#art2D-Whip">
+                            <img src="/public/whip.png" alt="EMBERWADE WHIP WEAPON CONCEPT" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
+                    <li class="image-container">
+                        <a href="#art2D-Environment">
+                            <img src="/public/Whispers in the Grass.png" alt="WHISPERS IN THE GRASS" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
+                    <li class="image-container">
+                        <a href="#art2D-Golden">
+                            <img src="/public/promise.png" alt="PROMISE OF FOREVER" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
+                    <li class="image-container">
+                        <a href="#art2D-Lumophone">
+                            <img src="/public/Lumophone_Concept.png" alt="LUMOPHONE" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
+                    <li class="image-container">
+                        <a href="#art2D-Profile">
+                            <img src="/public/Twilight Radiance.png" alt="TWILIGHT RADIANCE" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
+                    <li class="image-container">
+                        <a href="#art2D-Keeper">
+                            <img src="/public/Keeper.png" alt="KEEPER" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
                 </div>
             </section>
             <section id="art3D" class="hidden">
-                <div class="grid grid-cols-3 gap-4">
-                    <li><a href="#art3D-Barrels"><img src="/public/12. 3D Barrels.png" alt="Barrels"></a></li>
-                    <li><a href="#art3D-Lyre"><img src="/public/13. Lyre.png" alt="Lyre"></a></li>
-                    <li><a href="#art3D-Tavern"><img src="/public/15. 3D Tavern Environment.png" alt="Tavern"></a></li>
-                    <li><a href="#art3D-Plant"><img src="/public/Plant_Props.png" alt="Tavern"></a></li>
+                <div class="grid grid-cols-2 gap-4 px-32">
+                    <li class="image-container">
+                        <a href="#art3D-Barrels">
+                            <img src="/public/Render_005.png" alt="TOXIN BARRELS" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
+                    <li class="image-container">
+                        <a href="#art3D-Plant">
+                            <img src="/public/Plant1_Camera_1.png" alt="PLANT PROPS FOR PHANTOM PHOTOS" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
+                    <li class="image-container">
+                        <a href="#art3D-Lyre">
+                            <img src="/public/tbrender_001.png" alt="BARD'S LYRE" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
+                    <li class="image-container">
+                        <a href="#art3D-Tavern">
+                            <img src="/public/HighresScreenshot00022.png" alt="CYANEA'S EMBER TAVERN" class="hover-image">
+                            <div class="image-text"></div>
+                        </a>
+                    </li>
                 </div>
             </section>
             <section id="about" class="hidden max-w-screen-2xl mx-auto py-4">
@@ -103,7 +163,11 @@
             </section>
 
             <section id="art2D-Gina" class="hidden max-w-screen-2xl mx-auto">
-                <img class="mainImage" src="public/Gina.png" alt="Gina">
+                <div>
+                    <img class="mainImage" src="public/Gina.png" alt="Gina">
+                    <div class="image-title text-6xl py-4">GINA</div>
+                </div>
+                
 
                 <li><a href="#art2D"><div class="back custom-background flex">
                     <h1 class="text-6xl">⬅</h1>
@@ -113,6 +177,7 @@
 
             <section id="art2D-Asaro" class="hidden max-w-screen-xl mx-auto">
                 <img class="mainImage" src="public/asaro.png" alt="asaro">
+                <div class="image-title text-6xl py-4">CYBERNETIC</div>
 
                 <li><a href="#art2D"><div class="back custom-background flex">
                     <h1 class="text-6xl">⬅</h1>
@@ -122,6 +187,7 @@
 
             <section id="art2D-Keeper" class="hidden max-w-screen-xl mx-auto">
                 <img class="mainImage" src="public/Keeper.png" alt="Keeper">
+                <div class="image-title text-6xl py-4">KEEPER</div>
 
                 <li><a href="#art2D"><div class="back custom-background flex">
                     <h1 class="text-6xl">⬅</h1>
@@ -131,6 +197,7 @@
 
             <section id="art2D-Profile" class="hidden max-w-screen-xl mx-auto">
                 <img class="mainImage" src="public/Twilight Radiance.png" alt="Twilight">
+                <div class="image-title text-6xl py-4">TWILIGHT RADIANCE</div>
 
                 <li><a href="#art2D"><div class="back custom-background flex">
                     <h1 class="text-6xl">⬅</h1>
@@ -140,6 +207,7 @@
 
             <section id="art2D-Whip" class="hidden max-w-screen-xl mx-auto">
                 <img class="mainImage" src="public/whip.png" alt="whip">
+                <div class="image-title text-6xl py-4">EMBERWADE WHIP WEAPON CONCEPT</div>
 
                 <li><a href="#art2D"><div class="back custom-background flex">
                     <h1 class="text-6xl">⬅</h1>
@@ -149,7 +217,14 @@
 
             <section id="art2D-Lumophone" class="hidden max-w-screen-xl mx-auto">
                 <div class="space-y-2">
-                    <div class="border rounded-lg p-2 shadow"><img class="mainImage" src="public/Lumophone_Concept.png" alt="Lumophone"></div>
+                    <div>
+                        <img class="mainImage" src="public/Lumophone_Concept.png" alt="Lumophone">
+                        <div class="image-title text-4xl py-4">
+                            <h1>LUMOPHONE</h1>
+                            <h2>WEAPON/INSTRUMENT CONCEPT</h2>
+                        </div>
+                    </div>
+                    
                     <div class="thumbnail-container p-4">
                         <img src="public/Lumophone_Concept.png" alt="lumo" onclick="changeImage('art2D-Lumophone', 'public/Lumophone_Concept.png')">
                         <img src="public/Lumophone_Line_Sketch.png" alt="lumo 1" onclick="changeImage('art2D-Lumophone', 'public/Lumophone_Line_Sketch.png')">
@@ -170,7 +245,8 @@
 
             <section id="art2D-Environment" class="hidden max-w-screen-xl mx-auto">
                 <div class="space-y-2">
-                    <div class="border rounded-lg p-2 shadow"><img class="mainImage" src="public/Whispers in the Grass.png" alt="Environment"></div>
+                    <img class="mainImage" src="public/Whispers in the Grass.png" alt="Environment">
+                    <div class="image-title text-4xl py-4">WHISPERS IN THE GRASS</div>
                     <div class="thumbnail-container p-4">
                         <img src="public/Whispers in the Grass.png" alt="lumo" onclick="changeImage('art2D-Environment', 'public/Whispers in the Grass.png')">
                         <img src="public/Kavita Bharat - Environment Painting Colour Thumbnails.png" alt="lumo 1" onclick="changeImage('art2D-Environment', 'public/Kavita Bharat - Environment Painting Colour Thumbnails.png')">
@@ -191,8 +267,9 @@
 
             <section id="art3D-Tavern" class="hidden max-w-screen-xl mx-auto">
                 <div class="space-y-2">
-                    <div class="border rounded-lg p-2 shadow flex">
+                    <div>
                         <img class="mainImage" src="public/HighresScreenshot00022.png" alt="3D Tavern">
+                        <div class="image-title text-5xl py-4">CYANEA'S EMBER TAVERN</div>
                     </div>
                     <div class="thumbnail-container p-4">
                         <img src="public/HighresScreenshot00014.png" alt="tavern 1" onclick="changeImage('art3D-Tavern', 'public/HighresScreenshot00014.png')">
@@ -219,8 +296,9 @@
 
             <section id="art3D-Barrels" class="hidden max-w-screen-md mx-auto">
                 <div class="space-y-2">
-                    <div class="border rounded-lg p-2 shadow flex">
+                    <div>
                         <img class="mainImage" src="public/Render_005.png" alt="3D Barrels">
+                        <div class="image-title text-6xl py-4">TOXIN BARRELS</div>
                     </div>
                     <div class="thumbnail-container p-4">
                         <img src="public/Render_005.png" alt="barrels 1" onclick="changeImage('art3D-Barrels', 'public/Render_005.png')">
@@ -244,8 +322,9 @@
 
             <section id="art3D-Lyre" class="hidden max-w-screen-xl mx-auto">
                 <div class="space-y-2">
-                    <div class="border rounded-lg p-2 shadow flex">
+                    <div>
                         <img class="mainImage" src="public/tbrender_001.png" alt="3D Lyre">
+                        <div class="image-title text-6xl py-4">BARD'S LYRE</div>
                     </div>
                     <div class="thumbnail-container p-4">
                         <img src="public/tbrender_001.png" alt="lyre 1" onclick="changeImage('art3D-Lyre', 'public/tbrender_001.png')">
@@ -270,8 +349,9 @@
 
             <section id="art3D-Plant" class="hidden max-w-screen-xl mx-auto">
                 <div class="space-y-2">
-                    <div class="flex items-center justify-center">
-                        <img class="mainImage border rounded-lg p-2 shadow" src="public/Plant1_Camera_1.png" alt="3D Plant">
+                    <div>
+                        <img src="public/Plant1_Camera_1.png" alt="3D Plant">
+                        <div class="image-title text-6xl py-4">PLANT PROPS FOR PHANTOM PHOTOS</div>
                     </div>
                     <div class="thumbnail-container p-4">
                         <img src="public/Plant1_Camera_1.png" alt="plant" onclick="changeImage('art3D-Plant', 'public/Plant1_Camera_1.png')">
